@@ -1,0 +1,78 @@
+@import '../colors/colors.scss';
+
+@mixin font-base($font-size: 16px) {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: $font-size;
+    font-weight: 400;
+    color: $gray-800;
+}
+
+@mixin type-base($font-size: 16px) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-size;
+    font-weight: 400;
+    color: $dark-indigo-900;
+}
+
+
+h1, .h1 {
+    @include type-base(3rem);
+}
+h2, .h2 {
+    @include type-base(2.5rem);
+}
+h3, .h3 {
+    @include type-base(2rem);
+}
+h4, .h4 {
+    @include type-base(1.75rem);
+}
+h5, .h5 {
+    @include type-base(1.5rem);
+}
+h6, .h6 {
+    @include type-base(1rem);
+}
+
+//FORM FIELD
+.form {
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    &__control {
+        
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+
+        &__label {
+            @include type-base(0.87rem);
+            color: $dark-indigo-700;
+            padding: 0 0 8px 8px;
+        }
+
+    }
+
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        border-top: 1px $gray-200 solid;
+    }
+}
+
+
+// @mixin typo-menu {
+//     font-family: 'Noto Sans', sans-serif;
+//     font-size: 12px;
+//     font-weight: 600;
+//     color: $gray-900;
+//     letter-spacing: 1px;
+//     text-transform: uppercase;
+// }

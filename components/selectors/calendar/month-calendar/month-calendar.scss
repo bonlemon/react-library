@@ -1,0 +1,44 @@
+@import '~@library/foundation/main.scss';
+
+
+.month-calendar__container {
+    
+    @include raised-block;
+    @include type-base;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    width: 16rem;
+    height: 320px;
+    background-color: $white;
+    padding: 0 0 8px 0;
+    color: $gray-800;
+
+    &__clear {
+        @include ripple-fx;
+
+        display: inline-block;
+        width: 100px;
+        height: 1.5rem;
+        line-height: 2;
+        margin: auto;
+        cursor: pointer;
+        font-size: 0.87rem;
+        color: $blue-300;
+        text-align: center;
+
+    }
+    
+    
+
+    .calendar-panel {
+        padding: 1rem;
+        display: flex;
+        align-self: stretch;
+        flex-grow: 1;
+        
+        .month-calendar__month-panel {
+            width: 100%;
+        }
+    }
+}

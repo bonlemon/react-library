@@ -1,0 +1,21 @@
+@import '../../_variable.scss';
+
+.data-grid-header-row {
+    // position: absolute;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: calc(100% - 17px);
+    overflow: hidden;
+    user-select: none;
+    // border: solid #ff0000 1px;
+    border-left: none;
+    background-color: transparent;
+    height: $header-row_height;
+}
+
+.data-grid-header-filter-row {
+    top: $filter-row_height;
+    position: absolute;
+    min-height: 600px;
+}

@@ -1,0 +1,41 @@
+@import "~library/ui-kit/main.scss";
+
+
+@mixin typo-option-title{
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    font-size:      14px;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-option-title--selected{
+    @include typo-option-title;
+    color:          $white;
+}
+
+
+.select-list__item {
+
+    position: relative;
+    display: block;
+    width: 100%;
+
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    @include typo-option-title;
+
+    cursor: pointer;
+
+    &--selected {
+        background: #e6e6e6;
+        color:          $black;
+    }
+
+    &:hover {
+        background: #e6e6e6;
+        color:          $black;
+    }
+
+}

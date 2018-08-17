@@ -1,0 +1,16 @@
+@import '~library_new/foundation/main.scss';
+
+.container-fluid {
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
+    height: 500px;
+    background-color: $gray--middle;
+    //background-color: #fff;
+        
+        .relative-pos {
+            position: relative;
+        }
+}

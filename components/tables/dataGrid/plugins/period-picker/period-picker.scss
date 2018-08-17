@@ -1,0 +1,60 @@
+@import '~@library/foundation/main.scss';
+
+.period-picker__container {
+    display: flex;
+    flex-flow: column nowrap;
+    
+
+    .period-picker {
+        display: flex;
+        width: 100%;
+        padding: 0 8px;
+        position: absolute;
+        flex-flow: row nowrap;
+        top: 0;
+        justify-content: space-between;
+
+        &__show-form {
+            margin: auto;
+            cursor: pointer;
+            color: $blue-500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__clear {
+            @include ripple-fx;
+            width: 2rem;
+            text-align: center;
+            cursor: pointer;   
+
+            
+        }
+    }
+
+    .picker-form {
+        @include raised-block;
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        top: 35px;
+        background-color: #fff;
+        z-index: 3;
+        padding: 1rem;
+        border: 1px #e7e7e7 solid;
+
+        &__input {
+            margin-bottom: 8px;
+        }
+
+        &__save-button {
+            @include ripple-fx;
+            padding: 8px;
+
+            cursor: pointer;
+
+        }
+    }
+}

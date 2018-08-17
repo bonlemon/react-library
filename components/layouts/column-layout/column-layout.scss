@@ -1,0 +1,28 @@
+$base-column-width: 64px;
+$max-columns-count: 12;
+$step: 8px;
+
+.b-column {
+    display: flex;
+    // padding: $step $step;
+    height: 100%;
+    // background-color: yellow;
+
+    &--justify-start {
+        justify-content: flex-start;
+    }
+    &--justify-end {
+        justify-content: flex-end;
+    }
+    &--justify-center {
+        justify-content: center;
+    }
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+}

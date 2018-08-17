@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Pause Filled Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="App-/-Manager-Expertises" transform="translate(-1115.000000, -542.000000)" fill-rule="nonzero" fill="#9E9F9E">
+            <g id="Pause-FIlled" transform="translate(1113.000000, 542.000000)">
+                <path d="M9,2.00684547 L9,13.9931545 C9,15.1004223 9.89303857,16 10.9989566,16 L12.0010434,16 C13.1105271,16 14,15.1006498 14,13.9931545 L14,2.00684547 C14,0.899577688 13.1069614,0 12.0010434,0 L10.9989566,0 C9.88947292,0 9,0.899350204 9,2.00684547 L9,2.00684547 L9,2.00684547 L9,2.00684547 Z M2,13.9931545 C2,15.1004223 2.89303857,16 3.99895656,16 L5.00104344,16 C6.11052708,16 7,15.1006498 7,13.9931545 L7,2.00684547 C7,0.899577688 6.10696143,0 5.00104344,0 L3.99895656,0 C2.88947292,0 2,0.899350204 2,2.00684547 L2,13.9931545 L2,13.9931545 L2,13.9931545 Z" id="Pause-Filled-Icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+@import '~@library/foundation/main.scss';
+@mixin typo-calendar-cell {
+	@include type-base;
+	color: $black;
+	font-size: 1rem;
+}
+
+@mixin calendar-cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	box-sizing: border-box;
+	cursor: pointer;
+	@include typo-calendar-cell;
+}
+
+.b-calendar-panel-day {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	&__row {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	&__day-of-week {
+		@include calendar-cell;
+		color: $gray;
+	}
+	&__date {
+		@include calendar-cell;
+
+		transition: .1s ease-in-out;
+		
+		&--checked {
+			@extend .b-calendar-panel-day__date;
+			background: $red--rich;
+			color: $white;
+		}
+		&:hover {
+			color: $white;
+			background: $red--rich;
+			opacity: 0.7;
+		}
+	}
+}

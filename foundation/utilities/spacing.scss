@@ -1,0 +1,53 @@
+//Paddings & Margins
+// .ml-1 {margin-left:8px;}
+// .pt-2 {padding-top: 16px;}
+// .m-3 {margin: 24px;}
+
+$step: 8px;
+
+@for $i from 1 through 10 {
+    .ml-#{$i} {
+        margin-left: $step*$i;
+    }
+    
+    .mr-#{$i} {
+        margin-right: $step*$i;
+    }
+
+    .mt-#{$i} {
+        margin-top: $step*$i;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $step*$i;
+    }
+
+    .m-#{$i} {
+        margin: $step*$i;
+    }
+
+    .pl-#{$i} {
+        padding-left: $step*$i;
+    }
+
+    .pr-#{$i} {
+        padding-right: $step*$i;
+    }
+
+    .pt-#{$i} {
+        padding-top: $step*$i;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $step*$i;
+    }
+
+    .p-#{$i} {
+        padding: $step*$i;
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

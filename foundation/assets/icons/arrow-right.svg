@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ARM:-Expert-/-Role:-Expert-(Sources)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ARM-Expert-/-Form" transform="translate(-453.000000, -411.000000)" fill="#7F8FA4">
+            <g id="//-TAB---QUEUE" transform="translate(0.000000, 214.000000)">
+                <g id="::-search-form" transform="translate(151.000000, 30.000000)">
+                    <g id="datepicker" transform="translate(84.000000, 91.000000)">
+                        <g id="calendar-content" transform="translate(12.848239, 72.663750)">
+                            <g id="::-datepicker-from">
+                                <g id="::-month-nav">
+                                    <polygon id="arrow-right" points="206 11.0625 209.101266 8 206 4.9375 206.949367 4 211 8 206.949367 12"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

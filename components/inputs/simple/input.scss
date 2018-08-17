@@ -1,0 +1,155 @@
+// ----------------------------------------
+// INPUT COMPONENT  🔒
+// ----------------------------------------
+
+
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-label{
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    font-size:      1rem;
+}
+
+@mixin typo-input{
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-input-placeholder {
+    @include        typo-input;
+    color:          rgba($gray, 0.75);
+}
+
+.input-cover {
+    position: relative;
+    width: 100%;
+    
+    &__label {
+        padding: 4px 0;
+    }
+
+    @include typo-label;
+}
+
+.input-extended {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    
+    &__elem {
+        display: flex;
+        height: 100%;
+        width: 95%;
+        
+        border: 1px solid $gray--middle;
+        border-radius: 10px;
+        
+        transition: all .3s;
+    
+        &--focused {
+            border: 1px solid #1890ff;
+            box-shadow: 0 0 8px #1890ff;
+        }
+    
+        &::placeholder {
+            @include typo-input-placeholder;
+        }
+        &::-webkit-input-placeholder {
+            @include typo-input-placeholder;
+        }
+        &::-webkit-input-placeholder {
+            @include typo-input-placeholder;
+        }
+     
+    
+        &--required {
+            border: 1px solid $red--rich;
+        }
+    
+        &--checked {
+            border: 1px solid green;
+        }
+
+        
+    }
+
+    &__clear {
+        position: relative;
+        width: 40px;
+
+        cursor: pointer;
+        background: url("assets/icons/reset.svg") right 12px center no-repeat;
+
+        &--number {
+            position: relative;
+            height: 100%;
+            width: 40px;
+            right: 0;   
+        }
+    }
+
+    &__field {
+        height: 100%;
+        width: 100%;
+
+        padding: 2px 0 2px 10px;
+        background: none;
+        border: none;
+
+        &--number {
+            width: 96%;
+        }
+
+        @include typo-input;
+
+        &:focus {
+            outline:none;       
+        }
+
+        &--small {
+            font-size: 0.8rem;
+        }
+    
+        &--default {
+            font-size: 0.95rem;
+        }
+    
+        &--large {
+            font-size: 1rem;
+        }
+    }
+
+
+    &__icon {
+        position: relative;
+        height: 65%;
+        width: 45px;   
+
+        &--required {
+            background: url("assets/icons/danger.svg") center no-repeat;
+        }
+    
+        &--checked {
+            background: url("assets/icons/checked-symbol.svg") top 1px center no-repeat;
+        }
+    }
+
+    &--small {
+        height: 24px;
+    }
+
+    &--default {
+        height: 32px;
+    }
+
+    &--large {
+        height: 40px;
+    }
+}

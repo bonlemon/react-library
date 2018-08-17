@@ -1,0 +1,21 @@
+@import "~library/ui-kit/main.scss";
+@import '~@library/foundation/main.scss';
+
+
+.select-input-list {
+    position: absolute;
+    display: block;
+    width: 50%;
+    max-height: 200px;
+
+    border: 1px solid $gray--middle;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: $white;
+
+    z-index: $layer-dropdown;
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+}

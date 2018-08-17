@@ -1,0 +1,83 @@
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-tooltip-label {
+	@include 			typo-base;
+	font-size: 			14px;
+	font-weight: 		500;
+	letter-spacing: 	0;
+	color: 				$gray--dark;
+
+}
+
+.tooltip {
+    position: fixed;
+ 
+    width: 250px;
+    padding: 10px;
+    left: 0;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    
+
+    background: white;
+
+    z-index: 9999;
+
+    @include typo-tooltip-label;
+
+    &__hidden {
+        display: none;
+    }
+
+    &__top::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        width: 0; height: 0;
+        border-top: 8px solid #000000;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
+    &__bottom::after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -8px;
+        width: 0; height: 0;
+        border-bottom: 8px solid #000000;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
+    &__left::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -8px;
+        width: 0; height: 0;
+        border-left: 8px solid #000000;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+    &__right::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -8px;
+        width: 0; height: 0;
+        border-right: 8px solid #000000;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>preloader-card</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ARM:-Expert-/-Role:-Expert-(Sources)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-379.000000, -356.000000)" stroke="#7F8FA4" stroke-width="6">
+            <g id="Close-Circle" transform="translate(348.000000, 300.000000)">
+                <g id="preloader-card" transform="translate(34.000000, 59.000000)">
+                    <circle id="Oval" opacity="0.2" cx="20" cy="20" r="20"></circle>
+                    <path d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,0 20,0 C8.954305,0 0,8.954305 0,20 C0,27.4468401 4.06995725,33.9430908 10.1068413,37.3857215 C13.0243028,39.0494511 16.4011451,40 20,40 Z" id="Oval" stroke-dasharray="31,100"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

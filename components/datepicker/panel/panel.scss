@@ -1,0 +1,10 @@
+.calendar-panel {
+    padding: 1rem;
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+    
+    .month-calendar__month-panel {
+        width: 100%;
+    }
+}

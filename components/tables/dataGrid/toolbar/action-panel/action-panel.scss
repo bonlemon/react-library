@@ -1,0 +1,22 @@
+@import '~library/ui-kit/main.scss';
+
+.action-panel {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    //Заглушка - временная.
+    @include typo-menu;
+    color: #575757;
+    
+    &__left {
+        justify-content: flex-start;
+    }
+    &__center {
+        justify-content: center;
+
+    }
+    &__right {
+        justify-content: flex-end;
+
+    }
+}

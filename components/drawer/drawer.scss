@@ -1,0 +1,92 @@
+@import "~library/ui-kit/main.scss";
+@import "~@library/foundation/main.scss";
+
+@mixin typo-modal-title {
+    @include typo-base;
+    color: $gray--dark;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+}
+
+.b-drawer {
+    // BLOCK
+    display: block;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    overflow-x: hidden;
+    z-index: $layer-dropdown;
+    right: -2500px;
+    transition: right .3s cubic-bezier(0.4, 0, 1, 1);
+    
+    background-color: $white;
+    border-left: 1px solid $gray;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    
+    
+    &--active {
+        right: 0;
+        transition: right 500ms ease-out;
+    }
+   
+    
+    &--small {
+        width: 320px;
+    }
+    
+    &--medium {
+        width: 640px;
+    }
+    
+    &--large {
+        width: 960px;
+    }
+
+    &--full {
+        width: calc(100% - 64px);
+    }
+ 
+    
+    // ELEMENTS
+    
+    &__head {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        padding: 16px;
+        box-sizing: border-box;
+        
+        &-label {
+            @include typo-modal-title;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 28px - 28px);
+        }
+        &-button {
+            position: relative;
+            display: flex;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+    }
+
+    &__body {
+        display: flex;
+        width: 100%;
+        height: calc(100% - 60px);
+    }
+}
+
+.i-button-close {
+            background: url('~library/ui-kit/assets/icons/add.svg') center center no-repeat;
+            transform: rotate(45deg);
+        }

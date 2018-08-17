@@ -1,0 +1,28 @@
+@import "~library/ui-kit/main.scss";
+
+
+
+@mixin typo-option-title--selected{
+    color:          $white;
+}
+
+.select-input-list__item {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    padding: 12px 10px;
+    box-sizing: border-box;
+    background: $white;
+
+    cursor: pointer;
+
+    &:hover {
+        background: $gray--middle;
+        @include typo-option-title--selected;
+    }
+
+    &--selected {
+        @extend .select-input-list__item:hover;
+    }
+}

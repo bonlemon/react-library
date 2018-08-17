@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="9px" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>:: icon arrow down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="::-formfield-select-half" transform="translate(-208.000000, -43.000000)" fill="#D02138">
+            <g id="::-formfield-select">
+                <g id="::-select" transform="translate(0.000000, 27.000000)">
+                    <path d="M220.5,20.499625 C220.5,20.0986689 220.342372,19.7217101 220.057046,19.439741 L213.224179,12.792468 C212.829112,12.4025107 212.190619,12.4025107 211.795552,12.792468 C211.401483,13.1834253 211.401483,13.816356 211.795552,14.2063134 L218.27226,20.499625 L211.795552,26.7929367 C211.401483,27.1828941 211.401483,27.8158248 211.795552,28.2067821 C212.190619,28.5977393 212.829112,28.5977393 213.224179,28.2067821 L220.057046,21.560509 C220.342372,21.2765401 220.5,20.9015811 220.5,20.499625 Z" id="::-icon-arrow-down" transform="translate(216.000000, 20.500000) rotate(-270.000000) translate(-216.000000, -20.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow Left #2 Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Sources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Orion-App-/-Requests-/-New---Steps-1.2-Copy" transform="translate(-395.000000, -478.000000)" fill="#9E9F9E">
+            <g id="//-MAIN" transform="translate(365.000000, 122.000000)">
+                <g id="::-content" transform="translate(0.000000, 196.000000)">
+                    <g id="::-wizard">
+                        <path d="M45.9417209,167.499063 L42.8401701,170.367813 C42.3461731,170.856563 42.3461731,171.646563 42.8401701,172.135313 C43.3354177,172.624063 44.1370685,172.624063 44.6310655,172.135313 L49.4447224,167.576563 C49.8024012,167.221563 50,166.752813 50,166.250313 C50,165.749063 49.8024012,165.277813 49.4447224,164.925313 L44.6310655,160.366562 C44.1370685,159.877813 43.3354177,159.877813 42.8401701,160.366562 C42.3461731,160.854062 42.3461731,161.645313 42.8401701,162.134063 L45.9392196,164.999063 L31.2506253,164.999063 C30.5602801,164.999063 30,165.559063 30,166.249063 C30,166.939063 30.5602801,167.499063 31.2506253,167.499063 L45.9417209,167.499063 Z" id="Arrow-Left-#2-Icon" transform="translate(40.000000, 166.250938) scale(-1, 1) translate(-40.000000, -166.250938) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

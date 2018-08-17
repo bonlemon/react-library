@@ -1,0 +1,39 @@
+@import '~@library/foundation/main.scss';
+
+.b-layer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    &--app {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: $layer-app;
+    }
+
+    &--dropdown {
+        z-index: $layer-dropdown;
+    }
+
+    &--popover {
+        width: 50%;
+        z-index: $layer-popover;
+    }
+
+    &--overlay {
+        width: calc(100% - 64px);
+        z-index: $layer-overlay;
+    }
+
+    &--full-screen {
+        width: calc(100% - 64px);
+        z-index: $layer-full-screen;
+    }
+
+    &--sticky {
+        width: 100%;
+        z-index: $layer-sticky;
+    }
+}

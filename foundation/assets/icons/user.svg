@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>User Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="::-formfield-input-personal" transform="translate(-18.000000, -40.000000)" fill-rule="nonzero" fill="#9E9F9E">
+            <g id="::-formfield-input">
+                <g id="::-input" transform="translate(0.000000, 27.000000)">
+                    <g id="User" transform="translate(17.000000, 13.000000)">
+                        <path d="M13,5 C13,2.23857625 10.7614237,0 8,0 C5.23857625,0 3,2.23857625 3,5 C3,6.52024124 3.67847024,7.88201727 4.74913336,8.79905073 C2.52020611,9.96998067 1,12.3074588 1,15 C1,15.5522847 1.44771525,16 2,16 C2.55228475,16 3,15.5522847 3,15 C3,12.2385763 5.23857625,10 8,10 C10.7614237,10 13,12.2385763 13,15 C13,15.5522847 13.4477153,16 14,16 C14.5522847,16 15,15.5522847 15,15 C15,12.3074588 13.4797939,9.96998067 11.2508666,8.79905073 C12.3215298,7.88201727 13,6.52024124 13,5 Z M8,8 C6.34314575,8 5,6.65685425 5,5 C5,3.34314575 6.34314575,2 8,2 C9.65685425,2 11,3.34314575 11,5 C11,6.65685425 9.65685425,8 8,8 L8,8 Z" id="User-Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

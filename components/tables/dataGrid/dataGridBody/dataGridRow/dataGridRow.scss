@@ -1,0 +1,23 @@
+@import '../../_variable.scss';
+.data-grid-row {
+    height: $data-row_height;
+    overflow: hidden;
+    contain: layout;
+   // width: calc(100% - 17px);
+
+   *:hover {
+       cursor: pointer;
+       user-select: none;
+   }
+
+   &__link {
+       position: absolute;
+       width: 100%;
+       height: $data-row_height;
+       z-index: $layer-dropdown;
+   }
+
+   &--disabled {
+       opacity: 0.5;
+   }
+}

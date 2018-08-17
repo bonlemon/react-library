@@ -1,0 +1,29 @@
+.data-grid-header-cell--filter {
+    padding: 0 3px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    
+    input.b-input--filter {
+        margin: 0 auto;
+    }
+
+    input.b-input--auto {
+        width: 100%;
+    }
+
+    .b-datepicker {
+        margin: 4px 0;
+        
+        .b-calendar__navigation {
+            align-items: center;
+        }
+
+        .b-datepicker__buttons {
+            span {
+                height: 45px;
+                padding: 0;
+            }
+        }
+    }
+}

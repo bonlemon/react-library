@@ -1,0 +1,144 @@
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-label{
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    font-size:      1rem;
+}
+
+@mixin typo-input{
+    @include typo-base;
+    font-size: 14px;
+    color:          black;
+    letter-spacing: 0;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-input-item {
+    @include typo-base;
+    font-size: 14px;
+    color:          white;
+    letter-spacing: 0;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-input-placeholder {
+    @include        typo-input;
+    color:           rgba($gray, 0.75);
+}
+
+.select-cover {
+    position: relative;
+    width: 100%;
+    
+    &__label {
+        padding: 8px 0;
+
+        @include typo-label;
+    }  
+}
+
+.select-selection {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.select-flex {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.select {
+    position: relative;
+    width: 100%;
+
+    &__icon {
+        position: absolute;
+        right: 12px;
+        height: 20px;
+        width: 20px;
+
+        cursor: pointer;
+
+        background: url('./assets/icons/arrow-down-select.svg') center no-repeat !important;
+
+        transition: all .3s;
+
+        &--close {
+            transform: rotate(180deg);
+        }
+        &--open {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__icon-valid {
+        position: relative;
+        height: 20px;
+        width: 42px;        
+
+        &--required {
+            background: url("assets/icons/danger.svg") center no-repeat;
+        }
+    
+        &--checked {
+            background: url("assets/icons/checked-symbol.svg") top 1px center no-repeat;
+        }
+    }
+
+    &__input {
+        display: flex;
+        min-height: 30px;
+        width: 100%;
+        padding: 0px 35px 0 15px;
+
+        border: 1px solid $gray--middle;
+        border-radius: 10px;
+        text-overflow:  ellipsis;
+        
+        transition: all .3s;
+
+        @include typo-input;
+    
+        &--focused {
+            border-radius: 10px;
+            border: 1px solid #1890ff;
+            box-shadow: 0 0 8px #1890ff;
+        }
+    
+        &::placeholder {
+            @include typo-input-placeholder;
+        }
+
+        &:disabled {
+            background: white;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &--required {
+            border: 1px solid $red--rich;
+        }
+    
+        &--checked {
+            border: 1px solid green;
+        }  
+
+        &--small {
+            min-height: 24px;
+        }
+    
+        &--default {
+            min-height: 32px;
+        }
+    
+        &--large {
+            min-height: 40px;
+        }
+    }  
+}

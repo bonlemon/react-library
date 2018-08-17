@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>User Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="App-/-Tickets-/-New" transform="translate(-1053.000000, -32.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="//-APPBAR" transform="translate(100.000000, 0.000000)">
+                <g id="::-profile" transform="translate(867.000000, 32.000000)">
+                    <g id="User-Icon">
+                        <path d="M98,5 C98,2.23857625 95.7614237,0 93,0 C90.2385763,0 88,2.23857625 88,5 C88,6.52024124 88.6784702,7.88201727 89.7491334,8.79905073 C87.5202061,9.96998067 86,12.3074588 86,15 C86,15.5522847 86.4477153,16 87,16 C87.5522847,16 88,15.5522847 88,15 C88,12.2385763 90.2385763,10 93,10 C95.7614237,10 98,12.2385763 98,15 C98,15.5522847 98.4477153,16 99,16 C99.5522847,16 100,15.5522847 100,15 C100,12.3074588 98.4797939,9.96998067 96.2508666,8.79905073 C97.3215298,7.88201727 98,6.52024124 98,5 Z M93,8 C91.3431458,8 90,6.65685425 90,5 C90,3.34314575 91.3431458,2 93,2 C94.6568542,2 96,3.34314575 96,5 C96,6.65685425 94.6568542,8 93,8 L93,8 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

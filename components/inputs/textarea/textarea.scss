@@ -1,0 +1,123 @@
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-label {
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    font-size:      1rem;
+}
+
+@mixin typo-textarea {
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    text-overflow:  ellipsis;
+    font-size: 1rem;
+}
+
+@mixin typo-textarea-placeholder {
+    @include        typo-textarea;
+    color:          rgba($gray, 0.75);
+}
+
+.textarea-cover {
+    position: relative;
+    width: 100%;
+    
+    &__label {
+        padding: 4px 0;
+    }
+
+    @include typo-label;
+}
+
+.textarea-extended {
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+    width: 100%;
+    
+    box-sizing: border-box;
+     
+    &__elem {
+        display: flex;
+        justify-content: space-around;
+
+        height: 100%;
+        width: 95%;
+        
+        border: 1px solid $gray--middle;
+        border-radius: 10px;
+        
+        transition: all .2s;
+    
+        &--focused {
+            border: 1px solid #1890ff; 
+            box-shadow: 0 0 8px #1890ff;
+        }
+    
+        &::placeholder {
+            @include typo-textarea-placeholder;
+        }
+        &::-webkit-input-placeholder {
+            @include typo-textarea-placeholder;
+        }
+        &::-webkit-input-placeholder {
+            @include typo-textarea-placeholder;
+        }
+     
+    
+        &--required {
+            border: 1px solid $red--rich;
+        }
+    
+        &--checked {
+            border: 1px solid green;
+        }  
+    }
+
+    &__clear {
+        position: relative;
+ 
+        height: 24px;
+        width: 40px;
+
+        margin: auto 0;
+        padding: 0;
+
+        cursor: pointer;
+        background: url("assets/icons/reset.svg") center no-repeat;
+    }
+
+    &__field {
+        height: 100%;
+        width: 100%;
+        padding: 4px 0 4px 10px;
+
+        background: none;
+        border: none;
+
+        @include typo-textarea;
+
+        &:focus {
+            outline:none;       
+        }
+
+    }
+
+
+    &__icon {
+        position: relative;
+        height: 20px;
+        width: 48px;   
+
+        &--required {
+            background: url("assets/icons/danger.svg") center no-repeat;
+        }
+    
+        &--checked {
+            background: url("assets/icons/checked-symbol.svg") top 1px center no-repeat;
+        }
+    }
+}

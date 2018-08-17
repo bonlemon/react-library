@@ -1,0 +1,88 @@
+// ----------------------------------------
+// SIDEBAR COMPONENT  🔒
+// ----------------------------------------
+
+//** IMPORTS **//
+
+// connect UI Kit
+@import '../../../../library/ui-kit/main.scss';
+
+/* Типографика */
+
+@mixin typo-button-primary-label {
+    @include typo-base;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: none;
+    color: $white;
+    text-decoration: none !important;
+}
+
+@mixin typo-button-default-label {
+    @include typo-base;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: none;
+    color: rgba(15, 15, 15, 0.801);
+    text-decoration: none !important;
+}
+
+//** STYLES **//
+
+// sidebar
+.b-button-icon {
+    /* Позиционирование */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    @include typo-button-default-label;
+
+    background: none;
+    border: 1px solid $gray;
+
+    outline: none;
+
+    cursor: pointer;
+
+    &--link {
+        text-decoration: none;
+    }
+
+    &--primary {
+        @include typo-button-primary-label;
+        background: $red--rich;
+        border: none;
+
+        &:hover {
+            box-shadow: 0 1px 16px 0 rgba($red--rich, 0.4);
+        }
+    }
+
+    &--primary:disabled {
+        background: $red--rich;
+        border: none;
+        &:hover {
+            box-shadow: 0 1px 16px 0 rgba($red--rich, 0.4);
+        }
+    }
+
+    &--flat:disabled {
+        cursor: not-allowed;
+        &:hover {
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &--disabled {
+        opacity: 0.75;
+        box-shadow: none;
+        cursor: default;
+    }
+}

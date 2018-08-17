@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="9px" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>:: icon arrow down copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Sources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-537.000000, -216.000000)" fill="#9E9F9E">
+            <g id="::-Search-Item-Copy" transform="translate(88.000000, 88.000000)">
+                <g id="::-item-title">
+                    <path d="M461.5,132.499625 C461.5,132.098669 461.342372,131.72171 461.057046,131.439741 L454.224179,124.792468 C453.829112,124.402511 453.190619,124.402511 452.795552,124.792468 C452.401483,125.183425 452.401483,125.816356 452.795552,126.206313 L459.27226,132.499625 L452.795552,138.792937 C452.401483,139.182894 452.401483,139.815825 452.795552,140.206782 C453.190619,140.597739 453.829112,140.597739 454.224179,140.206782 L461.057046,133.560509 C461.342372,133.27654 461.5,132.901581 461.5,132.499625 Z" id="::-icon-arrow-down-copy" transform="translate(457.000000, 132.500000) scale(1, -1) rotate(-270.000000) translate(-457.000000, -132.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

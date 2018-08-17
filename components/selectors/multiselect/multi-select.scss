@@ -1,0 +1,147 @@
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-label{
+    @include typo-base;
+    color:          black;
+    letter-spacing: 0;
+    font-size:      1rem;
+}
+
+@mixin typo-input{
+    @include typo-base;
+    font-size: 14px;
+    color:          black;
+    letter-spacing: 0;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-input-item {
+    @include typo-base;
+    font-size: 14px;
+    color:          white;
+    letter-spacing: 0;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-input-placeholder {
+    @include        typo-input;
+    color:          rgba($gray, 0.75);
+}
+
+.multi-select-cover {
+    position: relative;
+    width: 100%;
+    
+    &__label {
+        padding: 8px 0;
+
+        @include typo-label;
+    }  
+}
+
+.multi-select {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+
+    &__input {
+        display: flex;
+        min-height: 30px;
+        width: 100%;
+        padding: 0 5px;
+
+        background: white;
+        border: 1px solid $gray--middle;
+        border-radius: 10px;
+
+        cursor: text;
+        
+        transition: all .3s;
+
+        &__selected-list {
+            display: flex;
+            flex-wrap: wrap;
+        
+            &__item {
+                display: flex;
+                height: 22px;
+                
+                
+                padding: 4px 6px;
+        
+                background:  $red;
+                border-radius: 5px;
+                color: white;
+
+                @include typo-input-item;
+        
+                &__label {
+                    display: inline-block;
+                }
+
+                &__remove {
+                    padding: 1px 3px;
+                    margin-left: 4px;
+                    display: inline-block;
+                }
+
+                &__remove:hover {
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+
+        &__elem {
+            height: 30px;
+            max-width: 100%;
+            min-width: .75em;
+
+            padding: 0 5px;
+
+            line-height: 30px;
+            background: none;
+            border: none;
+    
+            @include typo-input;
+    
+            &:focus {
+                outline:none;       
+            }
+        }
+    
+        &--focused {
+            border: 1px solid #1890ff;
+            box-shadow: 0 0 8px #1890ff;
+        }
+    
+        &::placeholder {
+            @include typo-input-placeholder;
+        }
+
+        &--small {
+            min-height: 24px;
+
+            .multi-select__input__selected-list__item {
+                margin: 2px 4px;
+            }
+        }
+    
+        &--default {
+            min-height: 32px;
+
+            .multi-select__input__selected-list__item {
+                margin: 4px 4px;
+            }
+        }
+    
+        &--large {
+            min-height: 40px;
+
+            .multi-select__input__selected-list__item {
+                margin: 8px 4px;
+            }
+        }
+    }  
+}

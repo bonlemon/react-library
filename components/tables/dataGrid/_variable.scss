@@ -1,0 +1,35 @@
+/*
+Переменные и общие стили для грида
+*/
+@import '~@library/foundation/main.scss';
+
+//Rows variables
+$toolbar_height: 50px;
+
+$header-row_height: 30px;
+$filter-row_height: 30px;
+
+$data-row_height: 30px;
+
+$pager_height: 50px;
+
+
+//Toolbar
+$section_width: 33%;
+
+
+@mixin with-toolbar {
+    top: calc(#{$header-row_height} + #{$toolbar_height});
+}
+
+@mixin with-filterRow {
+    top: calc(#{$header-row_height} + #{$filter-row_height});
+}
+
+@mixin with-filterRow-and-toolbar {
+    top: calc(#{$header-row_height} + #{$filter-row_height} + #{$toolbar_height});
+}
+
+@mixin with-paging {
+    bottom: $pager_height;
+}

@@ -1,0 +1,12 @@
+@import  '~library/ui-kit/main.scss';
+@import '../_variable.scss';
+
+.data-grid-header {
+    position: relative;
+    height: $header-row_height;
+    background-color: $white;
+
+    &--has-filter-row {
+        height: calc(#{$header-row_height} + #{$filter-row_height});
+    }
+}

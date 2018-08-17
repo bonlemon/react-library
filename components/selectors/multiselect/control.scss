@@ -1,0 +1,18 @@
+@import "~library/ui-kit/main.scss";
+
+
+.select-list__item__checkbox__control {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #ea7e8d;
+    border-radius: 2px;
+    box-sizing: border-box;
+    
+    &--checked {
+        border: 2px solid $red;
+        background: $red url('~library/ui-kit/assets/icons/icon-checkbox-checked.svg') center center no-repeat;
+    }
+
+}

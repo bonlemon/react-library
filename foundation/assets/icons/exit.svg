@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Exit Right Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="App-/-Tickets-/-New" transform="translate(-1262.000000, -32.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="//-APPBAR" transform="translate(100.000000, 0.000000)">
+                <g id="::-profile" transform="translate(867.000000, 32.000000)">
+                    <g id="::-exit" transform="translate(295.000000, 0.000000)">
+                        <path d="M1.99539757,14 L7,14 C7.55228475,14 8,14.4477153 8,15 C8,15.5522847 7.55228475,16 7,16 L1.99539757,16 C0.891482142,16 0,15.1057648 0,13.9991283 L0,2.00087166 C0,0.898950752 0.90024417,0 1.99539757,0 L7,0 C7.55228475,0 8,0.44771525 8,1 C8,1.55228475 7.55228475,2 7,2 C7,2 2,2.00416448 2,2.00087166 C2,2.00087166 1.9974345,14 1.99539757,14 Z M12.747,8.99925 L7,8.99925 C6.448,8.99925 6,8.55125 6,7.99925 C6,7.44725 6.448,6.99925 7,6.99925 L12.745,6.99925 L10.267,4.70725 C9.872,4.31625 9.872,3.68325 10.267,3.29325 C10.663,2.90225 11.304,2.90225 11.699,3.29325 L15.548,6.94025 C15.834,7.22225 15.992,7.59925 15.992,8.00025 C15.992,8.40225 15.834,8.77725 15.548,9.06125 L11.699,12.70825 C11.304,13.09925 10.663,13.09925 10.267,12.70825 C9.872,12.31725 9.872,11.68525 10.267,11.29425 L12.747,8.99925 Z" id="Exit-Right-Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

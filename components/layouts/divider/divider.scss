@@ -1,0 +1,35 @@
+$base_size: 16px;
+
+.divider {
+    $d: &;
+    background-color: transparent;
+
+    &--vertical {
+        display: inline-block;
+        height: 100%;
+        width: $base_size;
+        
+        // background-color: teal;
+
+        @for $i from 2 through 10 {
+             &#{$d}--#{$i}x {
+                width: $base_size*$i;
+            }
+        }
+    }
+
+    &--horizontal {
+        display: block;
+        height: $base_size;
+        width: 100%;
+        clear: both;
+
+        // background-color: red;
+
+        @for $i from 2 through 10 {
+            &#{$d}--#{$i}x {
+               height: $base_size*$i;
+           }
+       }
+    }
+}

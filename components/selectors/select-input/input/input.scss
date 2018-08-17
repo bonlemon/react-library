@@ -1,0 +1,42 @@
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-input{
+    @include typo-base;
+    color:          $gray--dark;
+    letter-spacing: 0;
+    font-size:      14px;
+    text-align:     left;
+    text-overflow:  ellipsis;
+}
+
+@mixin typo-input-placeholder{
+    @include        typo-input;
+    color:          rgba($gray, 0.75);
+}
+
+.select-input__input {
+    position: relative;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: none;
+
+    background: none;
+
+    @include typo-input;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        @include typo-input-placeholder;
+    }
+    &::-webkit-input-placeholder {
+        @include typo-input-placeholder;
+    }
+    &::-webkit-input-placeholder {
+        @include typo-input-placeholder;
+    }
+}

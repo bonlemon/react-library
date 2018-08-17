@@ -1,0 +1,56 @@
+@import "~library/ui-kit/main.scss";
+@mixin typo-button {
+    @include typo-base;
+    font-size: 16px;
+    color: $white;
+}
+
+.b-dialog {
+    position: relative;
+    width: 600px;
+    padding: 12.5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    &__head {
+        height: 28px;
+        margin-bottom: 12.5px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__message {
+        @include typo-base;
+        font-size: 18px;
+    }
+    &__message--red {
+        @include typo-base;
+        color: $red;
+        font-size: 18px;
+    }
+    &__controls {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        padding: 32px 8px 8px;
+    }
+    &__button {
+        @include typo-button;
+        display: block;
+        width: 120px;
+    }
+    &__close {
+        position: absolute;
+        right: 12.5px;
+        top: 12.5px;
+        display: block;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        background: url('~library/ui-kit/assets/icons/add.svg') center center no-repeat;
+        transform: rotate(45deg);
+    }
+}

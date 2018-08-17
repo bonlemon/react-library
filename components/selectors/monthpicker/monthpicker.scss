@@ -1,0 +1,46 @@
+@import '~@library/foundation/main.scss';
+.month-picker {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 16rem;
+    position: relative;
+    &__header {
+        
+        * {
+            cursor: pointer;
+            color: $gray-700;
+        }
+    }
+
+    &__calendar {
+        position: absolute;
+        top: 40px;
+        background-color: $white;
+        z-index: $layer-popover;
+        
+        &:before {
+            position: absolute;
+            top: -10px;
+            right: 90%;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid white;
+            z-index: 2;
+        }
+        &:after {
+            position: absolute;
+            top: -12px;
+            right: 90%;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid rgba(0, 0, 0, 0.03);
+            z-index: 1;
+        }
+    }
+}

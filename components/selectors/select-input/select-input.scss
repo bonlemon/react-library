@@ -1,0 +1,58 @@
+@import "~library/ui-kit/main.scss";
+
+@mixin typo-select-input{
+    @include typo-base;
+    color:          $gray--dark;
+    letter-spacing: 0;
+    font-size:      1rem;
+}
+
+.select-input {
+    position: relative;
+    display: block;
+    
+    @include typo-select-input;
+
+    &__body {
+        width: 100%;
+        padding: 10px 0;
+    }
+    &__sel {
+        display: inline-block;
+        width: 50%;
+        background: #eee url('./assets/icons/arrow-down-select.svg') right 8px top 16px no-repeat;
+
+        padding-right: 20px;
+    }
+
+    &__cover {
+        border: 1px solid $gray--middle; 
+    }
+
+    &__sel-elem {
+        width: 100%;   
+    }
+
+    &__inp-elem {
+        border-left: 1px solid $gray--middle !important; 
+        width: 50%;
+    }
+
+    &__tooltip {
+        display: inline;
+    }
+
+    &--full {
+        width: 100%;
+    }
+
+    &--two-thirds {
+
+        width: 70%;
+    }
+
+    &--half {
+        width: 50%;
+    }
+}
+

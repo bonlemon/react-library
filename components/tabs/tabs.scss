@@ -1,0 +1,66 @@
+@import '~library/ui-kit/main.scss';
+@import '~@library/foundation/main.scss';
+
+$tab-title-height: 3rem;
+
+.tabs {
+    @include typo-base;
+
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+
+    &__titles {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        min-width: 160px;
+        min-height: 48px;
+        height: $tab-title-height;
+        padding: 0 24px;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+        vertical-align: middle;
+
+        &__link {
+            display: flex;  
+            flex-flow: row nowrap;
+            line-height: 1.5rem;
+            justify-content: center;
+            align-content: center;
+            padding: 8px 24px;
+            will-change: box-shadow, transform;
+            user-select: none;
+            background-position: center;
+            transition: background 0.4s;
+
+            @include ripple-fx;
+
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: #000;
+
+            &--active {
+                border-bottom: 2px $red--rich solid;
+            }
+        }
+    }
+
+    // ******** TABS PANE ********//
+    .tabs-pane {
+        @include raised-block;
+        //padding: 1rem;
+        height: calc(100% - #{$tab-title-height});
+        overflow-y: auto;
+    }
+}

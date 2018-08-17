@@ -1,0 +1,65 @@
+@import '~library/ui-kit/main.scss';
+@import '../../_variable.scss';
+
+.data-grid-header-cell {
+    @include typo-base;
+    font-size: 0.9rem;
+    color: $white;
+    width: 200px;
+    transform: none;
+    display: inline-block;
+    position: absolute;
+    height: $header-row_height;
+    line-height: $header-row_height;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-right: 1px $gray--middle solid;
+    border-bottom: 1px $gray--middle solid;
+    text-align: center;
+    background-color: $blue-gray-500;
+
+    .data-grid-header-filter-row & {
+        background-color: $white;
+        color: $black;
+    }
+    
+    // &:hover {
+    //     cursor: pointer;
+    // }
+    
+    &:first-child {
+        border-left: none;
+    }
+
+    &--check {
+        display: flex;
+
+        //align-items: center;
+        
+        *:hover {
+            cursor: pointer;
+        }
+
+        .b-checkbox {
+            margin: auto;
+            padding: 0;
+
+            &-control {
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &__fixed {
+        z-index: 1001;
+        //background-color: $white;
+    }
+
+    &__disabled {
+        *:hover {
+            cursor: not-allowed;
+        }
+    }
+}

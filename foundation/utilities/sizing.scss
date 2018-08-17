@@ -1,0 +1,27 @@
+$step: 8px;
+
+.h-auto {
+    height: auto;
+}
+.w-auto {
+    width: auto;
+}
+
+.h-x {
+    height: 100%;
+}
+
+.w-x {
+    width: 100%;
+}
+
+@for $i from 1 through 100 {
+    .h-#{$i} {
+        min-height: $step * $i;
+        height: $step * $i;
+    }
+    
+    .w-#{$i} {
+        width: $step * $i;
+    }
+}

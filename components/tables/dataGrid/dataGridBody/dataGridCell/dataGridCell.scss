@@ -1,0 +1,98 @@
+@import '~library/ui-kit/main.scss';
+@import '../../_variable.scss';
+
+.data-grid-cell {
+    @include typo-base;
+    font-size: 0.8rem;
+    color: $black;
+    position: absolute;
+    width: 200px;
+    height: $data-row_height;
+    line-height: $data-row_height;
+    contain: layout;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: $white;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+
+    .data-grid-row--selected & {
+        background-color: $gray-200;
+    }
+
+    .data-grid-row--clicked & {
+        border-top: 1px $red solid;
+        border-bottom: 1px $red solid;
+    }
+    
+    &__fixed {
+        z-index: $layer-app;
+    }
+    &--check {
+        display: flex;
+        background-color: $white;
+        padding-left: 0;
+        padding-right: 0;
+        
+        * {
+            cursor: pointer;
+        }
+
+        .b-checkbox {
+            margin: auto;
+            padding: 0;
+            &-control {
+                border-radius: 100%;
+            }
+        }
+    }
+
+    // types
+    &--string {
+        text-align: left;
+    }
+
+    &--number {
+        text-align: right;
+    }
+
+    &--date {
+        text-align: center;
+    }
+
+    // format
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--lowercase {
+        text-transform: lowercase;
+    }
+    &--capitalize {
+        text-transform: lowercase;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    // alignment 
+    &--align__left {
+        text-align: left;
+    }
+    &--align__center {
+        text-align: center;
+    }
+
+    &--align__right {
+        text-align: right;
+    }
+
+    &--align__justify {
+        text-align: justify;
+    }
+
+
+}

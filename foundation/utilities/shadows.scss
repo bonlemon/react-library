@@ -1,0 +1,21 @@
+@import '~library/ui-kit/main.scss';
+
+@mixin raised-block {
+    box-shadow: 
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2), 
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin ripple-fx {
+    &:hover {
+        background: $gray--light radial-gradient(circle, transparent 1%, $gray--light 1%) center/15000%;
+    }
+
+    &:active {
+        background-color: $gray--middle;
+        //background-color: #e42945;
+        background-size: 100%;
+        transition: background 0s;
+    }
+}

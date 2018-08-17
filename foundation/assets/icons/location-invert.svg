@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Library" transform="translate(-270.000000, -1689.000000)" stroke-width="2" stroke="#979797">
+            <g id="::-formfield-datepicker-copy" transform="translate(202.000000, 1615.000000)">
+                <g id="::-formfield-input">
+                    <g id="::-input" transform="translate(0.000000, 27.000000)">
+                        <g id="Calendar" transform="translate(17.000000, 12.000000)">
+                            <path d="M59,36 C55.1433132,36 52,39.0853435 52,42.8893787 C52,43.8804166 52.2080003,44.8335344 52.6176959,45.7164955 C53.851914,48.3667561 55.9344921,51.1937906 57.9953306,53.5449807 C58.2440994,53.8328184 58.6144836,54 59,54 C59.3853055,54 59.7520742,53.8337305 60.0053098,53.5442494 C62.0721595,51.184111 64.1477223,48.3665249 65.3810031,45.7176815 C65.7915375,44.8329147 66,43.8797158 66,42.8893787 C65.9991219,39.0854902 62.8553881,36 59,36 Z M59.0009622,46 C57.3472578,46 56,44.6524976 56,42.9990494 C56,41.3461101 57.3467491,40 59.0009622,40 C60.6534745,40 62,41.3463336 62,42.9990494 C62,44.6522738 60.6529659,46 59.0009622,46 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
